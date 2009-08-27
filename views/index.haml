@@ -14,6 +14,6 @@
             %td
               ="#{index}. "
             %td
-              ="#{@base_url}#{item.shorter}"
+              %a{:href=>"#{@base_url}#{item.shorter}"}="#{@base_url}#{item.shorter}"
             %td
               ="#{item.url}"
