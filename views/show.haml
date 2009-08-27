@@ -3,7 +3,7 @@
     %title URL Produced
   %body
     %div
-      ="#{@url.url} | "
-      %a{:href=>"#{@base_url}#{@url.shorter}"}="#{@base_url}#{@url.shorter}"
-      %br
+      %div="#{@url.url}"
+      %div
+        %a{:href=>"#{@base_url}#{@url.shorter}"}="#{@base_url}#{@url.shorter}"
       %a{:href=>"/list"} Back
