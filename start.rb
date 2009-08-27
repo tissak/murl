@@ -3,7 +3,7 @@ require 'rubygems'
 require 'sinatra'
 require 'dm-core'
 require 'dm-timestamps'
-require 'Haml'
+require 'haml'
 require 'lib/base62'
 
 DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/urls.sqlite3")
