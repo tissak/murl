@@ -1,0 +1,9 @@
+%html
+  %head
+    %title URL Produced
+  %body
+    %div
+      ="#{@url.url} | "
+      %a{:href=>"#{@base_url}#{@url.shorter}"}="#{@base_url}#{@url.shorter}"
+      %br
+      %a{:href=>"/list"} Back

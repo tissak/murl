@@ -1,0 +1,19 @@
+%html
+  %head
+    %title URL List
+  %body
+    %form{:action=>"/shorten", :method=>"POST"}
+      %label URL
+      %input{:type=>"text", :name=>"u"}
+      %input{:type=>"submit"}
+    #div{:style=>"height:400px;width:90%;overflow:auto;border:1px solid #ccc"}
+      %table{:style=>"width:90%"}
+        - @urls.each_with_index do |item, index|
+          - colour = (index%2 == 0) ? "#ddd" : "#fff"
+          %tr{:style=>"background-color:#{colour}"}
+            %td
+              ="#{index}. "
+            %td
+              ="#{@base_url}#{item.shorter}"
+            %td
+              ="#{item.url}"

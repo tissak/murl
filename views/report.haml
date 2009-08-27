@@ -1,0 +1,6 @@
+%html
+  %head
+    %title URL Usage
+  %body
+    - for entry in @logs
+      %div= "#{entry.ip}: #{entry.url} (#{entry.url_id})"

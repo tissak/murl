@@ -1,0 +1,8 @@
+Murl - Minute (as in small) url
+
+Yet another url shrinker that exists purely to experiment with DataMapper and Sinatra.
+
+The code is heavily based on the article:
+  http://blog.pilsch.com/past/2009/6/7/shorten_your_own_damn_urls/
+
+!! This is by no means real world code !!
