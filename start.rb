@@ -1,4 +1,3 @@
-# hello_world.rb
 require 'rubygems'
 require 'sinatra'
 require 'dm-core'

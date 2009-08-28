@@ -3,4 +3,7 @@
     %title URL Usage
   %body
     - for entry in @logs
-      %div= "#{entry.ip}: #{entry.url} (#{entry.url_id})"
+      %div{:style=>"float:left;clear:both"}
+        %div{:style=>"float:left;width:300px"}= Time.parse(entry.created_at.to_s)
+        %div{:style=>"float:left;width:200px"}= entry.ip
+        %div{:style=>"float:left"}= entry.url
